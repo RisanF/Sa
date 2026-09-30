@@ -356,13 +356,20 @@ ul {
 }
 
 .hero-title {
-  font-size: clamp(1.8rem, 4.5vw, 4rem);
+  font-size: clamp(2rem, 8vw, 5.5rem);
   font-weight: 900;
   line-height: 1.05;
   color: #fff;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
-  white-space: nowrap;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 900px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    white-space: nowrap;
+  }
 }
 
 .hero-desc {
